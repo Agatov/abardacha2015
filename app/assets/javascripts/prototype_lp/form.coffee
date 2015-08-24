@@ -27,9 +27,7 @@ $ ->
       (data) =>
         show_thank_you()
         $("input[type=text]").val ""
-
-
-        console.log "order sended"
+        yaCounter32113166.reachGoal('new_order')
     )
 
     false
