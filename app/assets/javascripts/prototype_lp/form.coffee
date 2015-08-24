@@ -17,6 +17,10 @@ $ ->
       render_validation_errors invalid_fields
       return false
 
+    show_thank_you()
+    $("input[type=text]").val ""
+    yaCounter32113166.reachGoal('new_order')
+
     $.post(
       '/orders'
       {
@@ -25,9 +29,6 @@ $ ->
         "order[email]": email
       }
       (data) =>
-        show_thank_you()
-        $("input[type=text]").val ""
-        yaCounter32113166.reachGoal('new_order')
     )
 
     false
