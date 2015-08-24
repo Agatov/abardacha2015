@@ -1,0 +1,63 @@
+body
+  font-family: "OpenSans-Regular"
+  color: #404448
+  min-width: 1200px
+
+section
+  padding: 50px 0
+
+  &.blue
+    background: #F4F8FB
+
+  &.intro-section
+    background: image_url("prototype_lp/intro_sketch.jpg") no-repeat
+    background-position: 135% 50px
+    background-size: auto 500px
+
+  .title
+    font-size: 24px
+    margin-bottom: 50px
+
+.wrapper
+  width: 940px
+  margin: 0px auto
+
+.clearfix
+  &:after
+    clear: both
+    content: "."
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
+
+
+.button
+  display: inline-block
+  height: 50px
+  line-height: 49px
+  padding: 0px 25px
+
+  font-family: "OpenSans-Semibold"
+  font-size: 16px
+
+  border: 0px solid #ccc
+  border-radius: 4px
+  cursor: pointer
+
+  @include transition(all .3s ease-in-out)
+
+  &.red
+    background: #DC6450
+    color: #fff
+
+    &:hover
+      background: #E86A55
+
+  &.small
+    height: 46px
+    line-height: 45px
+    text-align: center
+    padding: 0px
+    border-radius: 50px
+

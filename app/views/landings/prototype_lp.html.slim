@@ -1,0 +1,150 @@
+.thank-you.hidden
+  .close
+
+  .text
+    .strong Спасибо 
+    | Мы свяжемся с вами уже очень скоро
+
+section.intro-section
+  .wrapper
+    .intro
+      .logo
+        | Абардача
+        em агенство интернет-маркетинга
+
+      .offer
+        |
+          Получите бесплатный прототип
+          вашего будущего лендинга 
+          <br />
+          в течение трех дней
+
+      .button.red#scroll-to-form Оформить заявку на прототип
+
+      .buffer
+
+
+section.blue
+  .wrapper
+    .reasons
+      .reason.one
+        .icon
+        |
+          Прототип помогает вам понять как будет выглядеть лендинг еще до заключения договора и снижает риск приобретения «кота в мешке» 
+
+      .reason.two
+        .icon
+        |
+          Готовый прототип является идеальным техническим заданием на разработку лендинга и позволяет абсолютно точно 
+          назвать стоимость разработки полноценного лендинга
+
+      .reason.three
+        .icon
+        |
+          При разработке прототипа всегда есть возможность «подогнать» будущий функционал лендинга именно под ваш бюджет - поэтому  у нас не существует типичного для остальных агенств по разработке лендингов прайса.
+
+
+section
+  .wrapper
+    .title 6 наших проектов, абсолютно разных по бюджету и сложности
+
+    .projects
+      .project
+        = image_tag "prototype_lp/projects/happymama.jpg"
+        .overlay
+          .overlay-content
+            .name 
+              |
+                Продающий сайт
+                <br />
+                для тренингового центра
+                <br />
+                «Жемчужинка»
+            a.button.red.small (href = "#" target = "_blank") Открыть в новом окне
+
+      .project
+        = image_tag "prototype_lp/projects/volvo.jpg"
+        .overlay
+          .overlay-content
+            .name 
+              |
+                Страница захвата 
+                <br />
+                по продаже деталей
+                <br />
+                для автомобилей Volvo
+            a.button.red.small (href = "#" target = "_blank") Открыть в новом окне
+      .project
+        = image_tag "prototype_lp/projects/kaleva.jpg"
+        .overlay
+          .overlay-content
+            .name 
+              |
+                Страница захвата
+                <br />
+                для продажи окон
+                <br />
+                известного бренда
+            a.button.red.small (href = "#" target = "_blank") Открыть в новом окне
+      .project
+        = image_tag "prototype_lp/projects/mir.jpg"
+        .overlay
+          .overlay-content
+            .name 
+              |
+                Страница захвата
+                <br />
+                для продажи квартир
+                <br />
+                в жилом комплексе «МИР»
+            a.button.red.small (href = "#" target = "_blank") Открыть в новом окне
+      .project
+        = image_tag "prototype_lp/projects/kolobok.jpg"
+        .overlay
+          .overlay-content
+            .name 
+              |
+                Веб-сервис 
+                <br />
+                по бронированию туров
+                <br />
+                «Колобок Трэвел»
+            a.button.red.small (href = "#" target = "_blank") Открыть в новом окне
+      .project
+        = image_tag "prototype_lp/projects/slimming.jpg"
+        .overlay
+          .overlay-content
+            .name 
+              |
+                Страница захвата
+                <br />
+                вебинара по похуданию
+                <br />
+                Константина Игумнова
+            a.button.red.small (href = "#" target = "_blank") Открыть в новом окне
+
+
+section.blue#form-section
+  .wrapper
+    .form-block
+      .form-info
+        .form-offer Заявка на бесплатный прототип
+        p Мы свяжемся с вами в течение ближайшего рабочего дня чтобы обсудить все детали.
+        p Имейте в виду, что мы оставляем за собой право отказать вам в разработке прототипа без объяснения  причин. 
+      
+      .form
+        form#order-form
+          .input-block
+            label Как вас зовут?
+            input (type = "text" name="name" placeholder = "Иван Васильевич" autocomplete = "off")
+
+          .input-block
+            label Ваш номер телефона
+            input (type = "text" name="phone" placeholder = "+7 999 999 99 99" autocomplete = "off")
+
+          .input-block
+            label Ваша электронная почта
+            input (type = "text" name="email" placeholder = "ivan.vasilievich@example.com" autocomplete = "off")
+
+          .form-actions
+            input.button.red (type = "submit" value = "Отправить")

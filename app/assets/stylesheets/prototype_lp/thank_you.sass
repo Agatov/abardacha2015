@@ -1,0 +1,42 @@
+.thank-you
+  display: none
+  z-index: 999
+  position: fixed
+  top: 0px
+  left: 0px
+  width: 100%
+  height: 100%
+
+  //display: table
+  background: #71B6B1
+
+  font-family: "OpenSans-Regular"
+  color: #fff
+  opacity: 0
+
+  &.hidden
+    //opacity: 0
+
+  .close
+    position: fixed
+    top: 25px
+    right: 25px
+    width: 25px
+    height: 25px
+    background: asset-url("prototype_lp/close_thank_you_50x50.png") no-repeat
+    background-size: 25px 25px
+    cursor: pointer
+
+  .text
+    display: table-cell
+    width: 100%
+    height: 100%
+    text-align: center
+    vertical-align: middle
+    font-size: 24px
+    line-height: 36px
+    margin-top: 20px
+
+  .strong
+    margin-bottom: 20px
+    font-size: 32px

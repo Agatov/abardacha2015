@@ -1,0 +1,52 @@
+.form-block
+  @extend .clearfix
+  .form-info
+    float: left
+    width: 400px
+
+    .form-offer
+      font-family: "OpenSans-Semibold"
+      font-size: 24px
+      margin-bottom: 30px
+
+
+    p
+      font-size: 18px
+      line-height: 26px
+      margin-bottom: 30px
+
+      &:last-child
+        margin-bottom: 0px
+
+  .form
+    float: right
+    width: 460px
+    
+    .input-block
+      margin-bottom: 20px
+
+      label
+        display: block
+        font-size: 16px
+        margin-bottom: 10px
+
+      input[type=text]
+        width: 460px
+        height: 50px
+        padding: 0px 15px
+
+        font-family: "OpenSans-Regular"
+        font-size: 18px
+        color: #404448
+
+        border: 1px solid #46A3B4
+        border-radius: 2px
+
+        outline: none
+        box-sizing: border-box
+
+        &.invalid
+          border: 1px solid #DC6450
+
+    .form-actions
+      text-align: right
