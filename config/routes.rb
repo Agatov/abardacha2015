@@ -7,4 +7,8 @@ Rails.application.routes.draw do
   end
 
   resources :orders, only: :create
+
+  namespace :api do
+    resources :orders, only: :create
+  end
 end

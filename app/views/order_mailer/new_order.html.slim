@@ -1,4 +1,4 @@
-h2 Поступила новая заявка
+h2 Поступила новая заявка с площадки #{@order.landing}
 br
 br
 br
@@ -10,3 +10,11 @@ br
 - if @order.email
   br
   = "Email: #{@order.email}"
+
+- if @order.site
+  br
+  = "Сайт: #{@order.site}"
+
+- if @order.city
+  br
+  = "Город #{@order.city}"
